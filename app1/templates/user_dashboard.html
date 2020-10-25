@@ -34,7 +34,7 @@
 		<body>
 		
 
-			  <header id="header" id="home">
+			  <header id="header" id="home" style="background-color: black;">
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
@@ -42,21 +42,9 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about-us.html">About Us</a></li>
-				          <li><a href="category.html">Category</a></li>
-				          <li><a href="price.html">Price</a></li>
-				          <li><a href="blog-home.html">Blog</a></li>
-				          <li><a href="contact.html">Contact</a></li>
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-								<li><a href="elements.html">elements</a></li>
-								<li><a href="search.html">search</a></li>
-								<li><a href="single.html">single</a></li>
-				            </ul>
-				          </li>
-				          <li><a class="ticker-btn" href="/register/">Signup</a></li>
-				          <li><a class="ticker-btn" href="/login/">Login</a></li>				          				          
+				          
+				         
+				          <li><a class="ticker-btn" href="/">Logout</a></li>				          				          
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -64,124 +52,10 @@
 			  </header><!-- #header -->
 
 
-			<!-- start banner Area -->
-			<section class="banner-area relative" id="home" style="height: 481px;">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row fullscreen d-flex align-items-center justify-content-center">
-						<div class="banner-content col-lg-12">
-							<h1 class="text-white">
-								<span>1500+</span>സ്കീം കഴിഞ്ഞ ആഴ്ച പോസ്റ്റുചെയ്തു			
-							</h1>	
-							<form action="search.html" class="serach-form-area">
-								<div class="row justify-content-center form-wrap">
-									<div class="col-lg-4 form-cols">
-										<input type="text" class="form-control" name="search" placeholder="നിങ്ങൾ എന്താണ് തിരയുന്നത്?">
-									</div>
-									<div class="col-lg-3 form-cols">
-										<div class="default-select" id="default-selects">
-											<select>
-												<option value="1">ഏരിയ തിരഞ്ഞെടുക്കുക</option>
-												<option value="2">Dhaka</option>
-												<option value="3">Rajshahi</option>
-												<option value="4">Barishal</option>
-												<option value="5">Noakhali</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-3 form-cols">
-										<div class="default-select" id="default-selects2">
-											<select>
-												<option value="1">എല്ലാ വിഭാഗവും</option>
-												<option value="2">Medical</option>
-												<option value="3">Technology</option>
-												<option value="4">Goverment</option>
-												<option value="5">Development</option>
-											</select>
-										</div>										
-									</div>
-									<div class="col-lg-2 form-cols">
-									    <button type="button" class="btn btn-info">
-									      <span class="lnr lnr-magnifier"></span> Search
-									    </button>
-									</div>								
-								</div>
-							</form>	
-							<p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p>
-						</div>											
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->	
-
-	
+			
 			
 		
-			<!-- Start feature-cat Area -->
-			<section class="feature-cat-area pt-100" id="category">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">തിരഞ്ഞെടുത്ത സ്കീം വിഭാഗങ്ങൾ</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="{% static 'img/o1.png' %}" alt="">
-								</a>
-								<p>കൃഷി</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="{% static 'img/o2.png' %}" alt="">
-								</a>
-								<p>നിർമ്മാണ പ്രവർത്തനങ്ങൾ</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="{% static 'img/o3.png' %}" alt="">
-								</a>
-								<p>കെട്ടിടം വസ്തു തുടങ്ങിയവയുമായി ബന്ധപ്പെടാം</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="{% static 'img/o4.png' %}" alt="">
-								</a>
-								<p>കുടിവെള്ളം ശുചിത്വം</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="{% static 'img/o5.png' %}" alt="">
-								</a>
-								<p>സാമൂഹ്യ നീതി</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="{% static 'img/o6.png' %}" alt="">
-								</a>
-								<p>പൊതുമരാമത്ത്</p>
-							</div>			
-						</div>																											
-					</div>
-				</div>	
-			</section>
-			<!-- End feature-cat Area -->
-			
+		
 			<!-- Start post Area -->
 			<section class="post-area section-gap">
 				<div class="container">

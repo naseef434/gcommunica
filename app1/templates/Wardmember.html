@@ -1,0 +1,56 @@
+
+ {% extends 'base.html' %}
+ {% load static %}
+  {% block content %}
+ 
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Ward Member</h1>
+          </div>
+            <div class="row">
+              <div class="container">
+
+                <div class="tables">
+                  <table class="table"  id="myTable">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">FirstName</th>
+                          <th scope="col">LastName</th>
+                          <th scope="col">username</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Adnan</td>
+                          <td>Kattekaden</td>
+                          <td>USername</td>
+                          <td>adnanka43@gmail.com</td>
+                          <td><a href="#"><input type="button" class="btn btn-info" value="edit"></a>&nbsp;&nbsp;<a href="#"><input type="button" class="btn btn-primary" value="Delete"></td></a>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+
+                <input class="btn btn-primary" type="submit" value="Create">  
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        {% endblock %}
+        

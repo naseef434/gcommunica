@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+ {% block content %}
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Scheme Add</h1>
+          </div>
+
+          <div class="row">
+
+
+              <div class="container">
+                
+                <div class="form-group col-md-6"">
+                  <label for="exampleFormControlSelect1">Category</label>
+                  <select class="form-control" id="exampleFormControlSelect1" name="category">
+                    {% for i in data %}
+                    <option>{{i.category}}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+                <form  method="POST">
+                  {% csrf_token %}
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Scheme Name</label>
+                        <input type="text" class="form-control" name="scheme" id="inputEmail4">
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Date Of  Published</label>
+                        <input type="date" class="form-control" id="inputEmail4" name="dop">
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Valid Date</label>
+                        <input type="date" class="form-control" id="inputEmail4" name="validdate">
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                   
+                  </form>
+                </div>
+          </div>
+        </div>
+        {% endblock %}
+        
