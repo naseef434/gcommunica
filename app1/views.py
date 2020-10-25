@@ -14,7 +14,7 @@ def login(request):
         return render(request, 'login.html')
     
 def userDashboard(request):
-    return render(request,  'user_dashboard.html')
+    return render(request,  'user_dashboard.html',)
 
 def register(request):
     return render(request, 'register.html')
@@ -54,13 +54,13 @@ def schemeadd(request):
         cat = request.POST['category']
         scheme = scheme.objects.create(schemename=scheme,datepub=dop,validdate=vld,category=cat)
         scheme.save()
-       
         return render(request, 'Category.html')
     else:
         return render(request, 'Category.html')
 
 def users(request):
-    return render(request, 'Users.html')
+    list = Scheme.objects.all()
+    return render(request, 'Users.html',{'data':list})
 
 def wardmember(request):
     return render(request, 'Wardmember.html')
